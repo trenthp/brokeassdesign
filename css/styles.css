@@ -298,16 +298,18 @@ p:last-child {
   display: flex;
   align-items: center;
   padding: var(--space-xl) 0;
+  padding-top: 0px;
 }
 
 .hero-content {
   position: relative;
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-banner {
-  max-width: 100%;
+  width: calc(100vw - var(--spiral-width) - var(--space-md) * 2);
+  max-width: 1200px;
+  margin-left: calc(-1 * var(--space-lg) + var(--space-md));
   filter: drop-shadow(4px 6px 8px rgba(0,0,0,0.2));
 }
 
@@ -759,6 +761,7 @@ p:last-child {
   .hero {
     min-height: auto;
     padding: var(--space-xl) 0;
+    padding-top: 0px;
   }
 
   .team-papers {
@@ -817,6 +820,20 @@ p:last-child {
   .spiral-edge {
     background-color: var(--paper-white);
     background-image: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-paper {
+    padding: var(--space-md) var(--space-md);
+  }
+
+  .nav-inner {
+    gap: var(--space-sm);
   }
 }
 
