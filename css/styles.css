@@ -311,6 +311,7 @@ p:last-child {
   max-width: 1200px;
   margin-left: calc(-1 * var(--space-lg) + var(--space-md));
   filter: drop-shadow(4px 6px 8px rgba(0,0,0,0.2));
+
 }
 
 .hero-tagline-paper {
@@ -320,6 +321,8 @@ p:last-child {
   box-shadow: var(--shadow-paper);
   transform: rotate(1deg);
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-tagline {
@@ -352,6 +355,10 @@ p:last-child {
 .btn-primary:hover {
   transform: rotate(0deg) translateY(-2px);
   box-shadow: 4px 6px 0 rgba(0,0,0,0.3);
+}
+
+.hero-content .btn-group {
+  justify-content: center;
 }
 
 .btn-lcd {
