@@ -415,7 +415,8 @@ p:last-child {
 }
 
 .service-card img {
-  max-width: 160px;
+  max-height: 140px;
+  max-width: 180px;
   margin: 0 auto var(--space-md);
 }
 
@@ -799,6 +800,12 @@ p:last-child {
   :root {
     --spiral-width: 25px;
     --grid-size: 16px;
+  }
+
+  .hero-banner {
+    width: calc(100vw - var(--spiral-width));
+    max-width: none;
+    margin-left: calc(-1 * var(--space-lg));
   }
 
   .services-scatter {
