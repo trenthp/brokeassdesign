@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Broke-Ass Design</title>
+  <meta name="description" content="Meet Meg and Trent, the two broke-ass designers behind all this. We're scrappy, talented, and way cheaper than those fancy agencies.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=VT323&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .about-intro-paper {
+      background-color: var(--paper-cream);
+      padding: var(--space-xl);
+      max-width: 800px;
+      margin: 0 auto var(--space-2xl);
+      box-shadow: var(--shadow-paper);
+      transform: rotate(-0.5deg);
+    }
+
+    .about-intro-paper p {
+      font-size: 1.2rem;
+    }
+
+    .team-member-paper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-xl);
+      align-items: flex-start;
+      background-color: var(--paper-cream);
+      padding: var(--space-xl);
+      margin-bottom: var(--space-xl);
+      box-shadow: var(--shadow-paper);
+    }
+
+    .team-member-paper:first-of-type {
+      transform: rotate(-1deg);
+    }
+
+    .team-member-paper:last-of-type {
+      transform: rotate(1deg);
+      background-color: var(--paper-yellow);
+    }
+
+    .team-photo-wrapper {
+      flex: 0 0 auto;
+      width: 220px;
+    }
+
+    .team-photo-polaroid {
+      background-color: white;
+      padding: var(--space-sm);
+      padding-bottom: var(--space-xl);
+      box-shadow: var(--shadow-paper);
+      transform: rotate(-3deg);
+    }
+
+    .team-member-paper:last-of-type .team-photo-polaroid {
+      transform: rotate(3deg);
+    }
+
+    .team-photo-polaroid img {
+      width: 100%;
+    }
+
+    .team-bio {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .team-bio h3 {
+      margin-bottom: var(--space-xs);
+    }
+
+    .team-bio .role {
+      color: var(--sns-red);
+      font-weight: 600;
+      margin-bottom: var(--space-md);
+      font-size: 1.1rem;
+    }
+
+    .team-bio p {
+      color: var(--text-medium);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-lg);
+      margin-top: var(--space-xl);
+    }
+
+    .value-paper {
+      background-color: var(--paper-cream);
+      padding: var(--space-lg);
+      box-shadow: var(--shadow-paper);
+      text-align: center;
+    }
+
+    .value-paper:nth-child(1) { transform: rotate(-2deg); background-color: var(--paper-yellow); }
+    .value-paper:nth-child(2) { transform: rotate(1deg); }
+    .value-paper:nth-child(3) { transform: rotate(-1deg); background-color: var(--paper-green); }
+    .value-paper:nth-child(4) { transform: rotate(2deg); background-color: var(--paper-pink); }
+
+    .value-paper h4 {
+      color: var(--sns-red);
+      margin-bottom: var(--space-sm);
+    }
+
+    .value-paper p {
+      font-size: 0.95rem;
+      color: var(--text-medium);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Spiral Notebook Edge - Fixed to left viewport -->
+  <div class="spiral-edge" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-paper">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Broke-Ass Design</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header-paper">
+      <h1>Who We Are</h1>
+      <p style="color: var(--text-medium);">Spoiler: just two people who are really good at design and really bad at charging what we're worth.</p>
+    </div>
+  </header>
+
+  <!-- About Intro -->
+  <section class="section">
+    <div class="container">
+      <div class="about-intro-paper">
+        <p>
+          Look, here's the deal: we're <span class="highlight">talented as hell</span> but we're not gonna charge you $50k for a logo. We've both worked at fancy agencies, seen the markup, and thought "this is some bullshit."
+        </p>
+        <p>
+          So we started Broke-Ass Design. We work from home (well, coffee shops mostly), we don't have a fancy office to pay for, and we pass those savings on to you. Revolutionary business model? Nah, just common sense.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl">Meet the Team</h2>
+
+      <!-- Meg -->
+      <div class="team-member-paper">
+        <div class="team-photo-wrapper">
+          <div class="team-photo-polaroid">
+            <img src="images/team_meg.png" alt="Meg">
+          </div>
+        </div>
+        <div class="team-bio">
+          <h3>Meg</h3>
+          <p class="role">Designer / Co-Founder / Coffee Addict</p>
+          <p>
+            The one with the curly hair and an unhealthy obsession with typography. Meg handles most of the branding and graphic design work, and has an eye for color that borders on supernatural.
+          </p>
+          <p>
+            Former agency designer who got tired of designing yet another "disruptive" app for rich tech bros. Now she makes cool stuff for normal people and businesses that actually deserve it.
+          </p>
+          <p>
+            <span class="highlight-pink">Specialties:</span> Branding, logo design, illustration, making things look way cooler than they have any right to.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trent -->
+      <div class="team-member-paper">
+        <div class="team-photo-wrapper">
+          <div class="team-photo-polaroid">
+            <img src="images/team_trent.png" alt="Trent">
+          </div>
+        </div>
+        <div class="team-bio">
+          <h3>Trent</h3>
+          <p class="role">Designer / Co-Founder / Beard Enthusiast</p>
+          <p>
+            The bearded one who lives in hoodies and thinks every problem can be solved with a well-designed interface. Trent handles web design, product design, and anything involving screens.
+          </p>
+          <p>
+            Did the whole billion dollar corporate thing, burned out, moved somewhere cheaper, and now uses his powers for good instead of evil. Turns out designing for small businesses is way more fulfilling than optimizing engagement metrics.
+          </p>
+          <p>
+            <span class="highlight">Specialties:</span> Web design, UX/UI, making buttons people actually want to click, explaining tech stuff without being condescending.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">What We're About</h2>
+
+      <div class="values-grid">
+        <div class="value-paper">
+          <h4>No Bullshit</h4>
+          <p>We don't pad invoices, we don't use jargon to confuse you, and we don't pretend things are more complicated than they are.</p>
+        </div>
+
+        <div class="value-paper">
+          <h4>Quality Work</h4>
+          <p>Being affordable doesn't mean being cheap. We put real effort into every project because our reputation is all we have.</p>
+        </div>
+
+        <div class="value-paper">
+          <h4>Real Partners</h4>
+          <p>We're not here to take your money and disappear. We want your project to succeed, and we'll work with you to make it happen.</p>
+        </div>
+
+        <div class="value-paper">
+          <h4>Stay Scrappy</h4>
+          <p>Constraints breed creativity. We've learned to do more with less, and honestly? It makes the work better.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section sns-card" style="text-align: center;">
+        <div class="lcd-display lcd-display-lg">
+          WANT TO WORK WITH US?
+        </div>
+
+        <p style="color: white; margin: var(--space-xl) 0; font-size: 1.2rem;">
+          We're always down to chat about new projects. No pressure, no hard sell—just a conversation.
+        </p>
+
+        <a href="contact.html" class="btn" style="background-color: var(--sns-yellow); color: var(--text-dark); transform: rotate(0);">let's talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-paper">
+      <div class="footer-inner">
+        <span class="footer-logo">Broke-Ass Design</span>
+
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2024 Broke-Ass Design. Made with spite and caffeine.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

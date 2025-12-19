@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Broke-Ass Design</title>
+  <meta name="description" content="Web design, graphic design, branding, marketing, print, and product design. We do it all, and we do it for less.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=VT323&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .service-section {
+      padding: var(--space-2xl) 0;
+    }
+
+    .service-paper {
+      background-color: var(--paper-cream);
+      padding: var(--space-xl);
+      box-shadow: var(--shadow-paper);
+      margin-bottom: var(--space-xl);
+    }
+
+    .service-paper:nth-child(odd) {
+      transform: rotate(-0.5deg);
+    }
+
+    .service-paper:nth-child(even) {
+      transform: rotate(0.5deg);
+      background-color: var(--paper-yellow);
+    }
+
+    .service-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: var(--space-xl);
+      margin-bottom: var(--space-lg);
+    }
+
+    .service-header img {
+      max-width: 180px;
+      transform: rotate(-3deg);
+    }
+
+    .service-description {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .service-description h2 {
+      margin-bottom: var(--space-sm);
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-lg);
+      margin-top: var(--space-xl);
+    }
+
+    .work-item {
+      background-color: var(--paper-white);
+      box-shadow: var(--shadow-paper);
+      transition: transform 0.2s ease;
+    }
+
+    .work-item:nth-child(1) { transform: rotate(-1deg); }
+    .work-item:nth-child(2) { transform: rotate(1.5deg); }
+    .work-item:nth-child(3) { transform: rotate(-0.5deg); }
+
+    .work-item:hover {
+      transform: rotate(0deg) scale(1.02);
+    }
+
+    .work-item-image {
+      height: 140px;
+      background-color: var(--paper-cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      font-style: italic;
+      border-bottom: 2px dashed var(--text-light);
+    }
+
+    .work-item-info {
+      padding: var(--space-md);
+    }
+
+    .work-item-title {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 1rem;
+    }
+
+    .work-item-client {
+      color: var(--text-light);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Spiral Notebook Edge - Fixed to left viewport -->
+  <div class="spiral-edge" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-paper">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Broke-Ass Design</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header-paper">
+      <h1>What We Do</h1>
+      <p style="color: var(--text-medium);">All the design services you need, minus the pretentious agency bullshit and inflated prices.</p>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <div class="container">
+
+    <!-- Web Design -->
+    <section id="web-design" class="service-paper">
+      <div class="service-header">
+        <img src="images/paper_banner_webDesign.png" alt="Web Design">
+        <div class="service-description">
+          <h2>Web Design</h2>
+          <p>Your website is basically your digital first impression. We make sure it doesn't suck. Whether you need a simple landing page or a full-blown e-commerce situation, we've got you.</p>
+          <p><span class="highlight">What you get:</span> Responsive design, basic SEO, actually readable layouts, and a site that loads before your visitors give up.</p>
+        </div>
+      </div>
+
+      <div class="work-grid">
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Portfolio Site</p>
+            <p class="work-item-client">Some Cool Artist</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">E-Commerce Store</p>
+            <p class="work-item-client">Local Shop</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Business Site</p>
+            <p class="work-item-client">Startup Co.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Graphic Design -->
+    <section id="graphic-design" class="service-paper">
+      <div class="service-header">
+        <img src="images/paper_banner_graphicDesign.png" alt="Graphic Design">
+        <div class="service-description">
+          <h2>Graphic Design</h2>
+          <p>Logos, posters, social media graphics, album covers, event flyers—if it needs to look good, we can make it happen. We've got the eye for this stuff, trust.</p>
+          <p><span class="highlight">What you get:</span> Custom designs (not templates), multiple revisions, and files in whatever format you need.</p>
+        </div>
+      </div>
+
+      <div class="work-grid">
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Event Poster Series</p>
+            <p class="work-item-client">Local Venue</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Social Media Kit</p>
+            <p class="work-item-client">Influencer</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Album Artwork</p>
+            <p class="work-item-client">Indie Band</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Branding -->
+    <section id="branding" class="service-paper">
+      <div class="service-header">
+        <img src="images/paper_banner_branding.png" alt="Branding">
+        <div class="service-description">
+          <h2>Branding</h2>
+          <p>Your brand is more than just a logo—it's the whole vibe. We'll help you figure out what that vibe is and make it consistent across everything.</p>
+          <p><span class="highlight">What you get:</span> Logo design, color palette, typography, brand guidelines, and whatever else you need to look legit.</p>
+        </div>
+      </div>
+
+      <div class="work-grid">
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Full Brand Identity</p>
+            <p class="work-item-client">Coffee Shop</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Logo Redesign</p>
+            <p class="work-item-client">Tech Startup</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Brand Guidelines</p>
+            <p class="work-item-client">Non-Profit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketing -->
+    <section id="marketing" class="service-paper">
+      <div class="service-header">
+        <img src="images/paper_banner_marketing.png" alt="Marketing">
+        <div class="service-description">
+          <h2>Marketing</h2>
+          <p>Having a great product means nothing if nobody knows about it. We'll help you get seen without being annoying about it.</p>
+          <p><span class="highlight">What you get:</span> Campaign concepts, ad designs, email templates, and social content people might actually engage with.</p>
+        </div>
+      </div>
+
+      <div class="work-grid">
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Launch Campaign</p>
+            <p class="work-item-client">App Startup</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Email Series</p>
+            <p class="work-item-client">Online Store</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Social Campaign</p>
+            <p class="work-item-client">Local Business</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Print -->
+    <section id="print" class="service-paper">
+      <div class="service-header">
+        <img src="images/paper_banner_print.png" alt="Print">
+        <div class="service-description">
+          <h2>Print</h2>
+          <p>Sometimes you need real, physical things. Business cards people won't throw away. Stickers that look cool. Zines with character. We do all that.</p>
+          <p><span class="highlight">What you get:</span> Print-ready files, help with paper stock choices, and designs that look even better IRL.</p>
+        </div>
+      </div>
+
+      <div class="work-grid">
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Business Card Set</p>
+            <p class="work-item-client">Freelancer</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Zine Design</p>
+            <p class="work-item-client">Art Collective</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Merch Design</p>
+            <p class="work-item-client">Band</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Design -->
+    <section id="product-design" class="service-paper">
+      <div class="service-header">
+        <img src="images/paper_banner_productDesign.png" alt="Product Design">
+        <div class="service-description">
+          <h2>Product Design</h2>
+          <p>Apps, dashboards, user interfaces—we make digital products that people can actually use without screaming. Good UX shouldn't cost a fortune.</p>
+          <p><span class="highlight">What you get:</span> Wireframes, UI mockups, prototypes, and designs that make sense to actual humans.</p>
+        </div>
+      </div>
+
+      <div class="work-grid">
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Mobile App UI</p>
+            <p class="work-item-client">Fitness Startup</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">Dashboard Redesign</p>
+            <p class="work-item-client">SaaS Company</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-item-image">[Project Image]</div>
+          <div class="work-item-info">
+            <p class="work-item-title">App Prototype</p>
+            <p class="work-item-client">MVP Project</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section sns-card" style="text-align: center;">
+        <div class="lcd-display lcd-display-lg">
+          GOT A PROJECT?
+        </div>
+
+        <p style="color: white; margin: var(--space-xl) 0; font-size: 1.2rem;">
+          Stop overthinking it. Hit us up, tell us what you need, and let's figure out how to make it happen.
+        </p>
+
+        <a href="contact.html" class="btn" style="background-color: var(--sns-yellow); color: var(--text-dark); transform: rotate(0);">get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-paper">
+      <div class="footer-inner">
+        <span class="footer-logo">Broke-Ass Design</span>
+
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2024 Broke-Ass Design. Made with spite and caffeine.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

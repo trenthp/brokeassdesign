@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Broke-Ass Design</title>
+  <meta name="description" content="Get in touch with Broke-Ass Design. Tell us what you need, and let's make something cool together.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=VT323&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .form-paper {
+      background-color: var(--paper-cream);
+      padding: var(--space-xl);
+      box-shadow: var(--shadow-paper);
+      transform: rotate(-0.5deg);
+    }
+
+    .form-header {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-lg);
+      border-bottom: 2px dashed var(--text-light);
+    }
+
+    .form-header img {
+      width: 100px;
+      transform: rotate(-5deg);
+    }
+
+    .form-header h2 {
+      margin-bottom: var(--space-xs);
+    }
+
+    .info-stack {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .info-paper {
+      background-color: var(--paper-yellow);
+      padding: var(--space-lg);
+      box-shadow: var(--shadow-paper);
+    }
+
+    .info-paper:nth-child(1) { transform: rotate(1deg); }
+    .info-paper:nth-child(2) { transform: rotate(-1.5deg); background-color: var(--paper-green); }
+    .info-paper:nth-child(3) { transform: rotate(0.5deg); background-color: var(--paper-pink); }
+
+    .info-paper h3 {
+      margin-bottom: var(--space-md);
+      font-size: 1.25rem;
+    }
+
+    .info-paper p {
+      color: var(--text-medium);
+    }
+
+    .info-paper strong {
+      color: var(--sns-red);
+    }
+
+    .lcd-inline {
+      display: inline-block;
+      background-color: var(--sns-lcd-bg);
+      color: var(--sns-lcd-text);
+      font-family: 'VT323', monospace;
+      padding: 0.2em 0.5em;
+      letter-spacing: 1px;
+      font-size: 0.9em;
+    }
+
+    .faq-section {
+      margin-top: var(--space-2xl);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-lg);
+      margin-top: var(--space-xl);
+    }
+
+    .faq-paper {
+      background-color: var(--paper-cream);
+      padding: var(--space-lg);
+      box-shadow: var(--shadow-paper);
+    }
+
+    .faq-paper:nth-child(1) { transform: rotate(-1deg); }
+    .faq-paper:nth-child(2) { transform: rotate(1.5deg); }
+    .faq-paper:nth-child(3) { transform: rotate(-0.5deg); }
+    .faq-paper:nth-child(4) { transform: rotate(1deg); }
+    .faq-paper:nth-child(5) { transform: rotate(-1.5deg); }
+    .faq-paper:nth-child(6) { transform: rotate(0.5deg); }
+
+    .faq-paper h4 {
+      color: var(--sns-red);
+      margin-bottom: var(--space-sm);
+      font-size: 1.1rem;
+    }
+
+    .faq-paper p {
+      color: var(--text-medium);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Spiral Notebook Edge - Fixed to left viewport -->
+  <div class="spiral-edge" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-paper">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Broke-Ass Design</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header-paper">
+      <h1>Hit Us Up</h1>
+      <p style="color: var(--text-medium);">Got a project? Got questions? Just want to say hi? We're all ears. Well, eyes. It's email.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Contact Form -->
+        <div class="form-paper">
+          <div class="form-header">
+            <img src="images/speakNspell_1.png" alt="Speak & Spell">
+            <div>
+              <h2>Tell Us What You Need</h2>
+              <p style="color: var(--text-medium);">We'll get back to you faster than you'd expect.</p>
+            </div>
+          </div>
+
+          <form action="#" method="POST">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md);">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="What do we call you?" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="How do we reach you?" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">What do you need?</label>
+              <div class="checkbox-group">
+                <label class="checkbox-item">
+                  <input type="checkbox" name="services" value="web-design">
+                  <span>Web Design</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="services" value="graphic-design">
+                  <span>Graphic Design</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="services" value="branding">
+                  <span>Branding</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="services" value="marketing">
+                  <span>Marketing</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="services" value="print">
+                  <span>Print</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="services" value="product-design">
+                  <span>Product Design</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="services" value="other">
+                  <span>Other / Not Sure</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="budget" class="form-label">Budget Range (optional)</label>
+              <select id="budget" name="budget" class="form-input form-select">
+                <option value="">Prefer not to say</option>
+                <option value="under-500">Under $500</option>
+                <option value="500-1000">$500 - $1,000</option>
+                <option value="1000-2500">$1,000 - $2,500</option>
+                <option value="2500-5000">$2,500 - $5,000</option>
+                <option value="over-5000">$5,000+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Tell us about your project</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="What are you working on? What do you need? Any deadlines? The more detail, the better." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">send message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="info-stack">
+          <div class="info-paper">
+            <h3>Email Directly</h3>
+            <p><strong>hello@brokeass.design</strong></p>
+            <p>We check this obsessively. Usually reply within 24 hours.</p>
+          </div>
+
+          <div class="info-paper">
+            <h3>Response Time</h3>
+            <p><span class="lcd-inline">USUALLY 24HRS</span></p>
+            <p>Unless it's the weekend. We're broke, not crazy.</p>
+          </div>
+
+          <div class="info-paper">
+            <h3>What Happens Next</h3>
+            <p>We'll reply with some questions, maybe hop on a quick call, figure out if we're a good fit, and give you a quote. No pressure, no obligation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq-section">
+    <div class="container">
+      <h2 class="text-center">Common Questions</h2>
+
+      <div class="faq-grid">
+        <div class="faq-paper">
+          <h4>How cheap is "broke-ass" cheap?</h4>
+          <p>Depends on the project, but typically 40-60% less than traditional agencies. We're lean, fast, and don't have fancy overhead.</p>
+        </div>
+
+        <div class="faq-paper">
+          <h4>Is cheap work actually good?</h4>
+          <p>Our work isn't cheap because it's bad—it's affordable because we've cut the bullshit. Same skills, fewer markups.</p>
+        </div>
+
+        <div class="faq-paper">
+          <h4>How long do projects take?</h4>
+          <p>Small stuff: days to a week. Bigger stuff: 2-6 weeks. We'll give you a realistic timeline and stick to it.</p>
+        </div>
+
+        <div class="faq-paper">
+          <h4>What do you need from me?</h4>
+          <p>A clear idea of what you want (or the problem you're solving), your content if you have it, and timely feedback.</p>
+        </div>
+
+        <div class="faq-paper">
+          <h4>Do you do revisions?</h4>
+          <p>Yep. Usually 2-3 rounds included. We're not trying to nickel-and-dime you for every tweak.</p>
+        </div>
+
+        <div class="faq-paper">
+          <h4>What if we're not a good fit?</h4>
+          <p>No hard feelings. We'll tell you honestly and try to point you in a better direction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-paper">
+      <div class="footer-inner">
+        <span class="footer-logo">Broke-Ass Design</span>
+
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2024 Broke-Ass Design. Made with spite and caffeine.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
